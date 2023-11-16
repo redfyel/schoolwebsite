@@ -122,12 +122,13 @@ img{
     width:30%;
     position: relative;
     left:500px;
-    #pic2{
+    
+}
+#pic2{
     flex-direction: row;
     position: absolute;
     top: 900px;
     left:1200px;
-}
 
    
 }
