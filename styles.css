@@ -13,7 +13,9 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    height: 70%;
 }
+
 
 nav ul {
     list-style: none;
@@ -25,11 +27,24 @@ nav li {
     margin: 0 55px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #213502;
+    height: 50px; /* Adjust the height of the navigation bar as needed */
 }
 
+/* Style the links within the navigation bar */
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px; /* Add spacing between links if needed */
+}
+.different{
+    background-color: #90ee90;
+}
 section {
     padding: 10px;
 }
@@ -63,7 +78,7 @@ img{
     top: 50%;
     font-size: 30px;
     font-weight: bold;
-    color:lightgreen;
+    color:#90ee90;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border: none;
@@ -174,4 +189,5 @@ img{
         left: 500px;
     }
 }
+
 
