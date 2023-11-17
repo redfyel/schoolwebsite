@@ -20,6 +20,9 @@ h1{
     position:relative;
     left:15px;
 }
+.map{
+     background-color: #213502;
+}
 
 
 nav ul {
