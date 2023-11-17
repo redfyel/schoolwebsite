@@ -90,6 +90,18 @@ img{
     cursor: pointer;
     transition:  0.3s;
 }
+.prev1, .next1 {
+    position: absolute;
+    top: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color:#90ee90;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition:  0.3s;
+}
 
 .prev:hover, .next:hover {
     background: rgba(0, 0, 0, 0.8);
