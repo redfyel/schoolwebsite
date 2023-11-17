@@ -56,6 +56,19 @@ nav li {
     background-color: #213502;
     height: 50px; /* Adjust the height of the navigation bar as needed */
 }
+  .row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
 
 /* Style the links within the navigation bar */
 .nav a {
