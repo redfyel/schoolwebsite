@@ -5,4 +5,4 @@ const contactButton = document.querySelector('.contact-button');
 
       const footer = document.getElementById('footer');
       footer.scrollIntoView({ behavior: 'smooth' });
-    });   
+    });
