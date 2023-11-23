@@ -26,6 +26,18 @@ h3{
     top:1100px;
     left :1300px;
 }
+#h3{
+    position: absolute;
+    color: #fff;
+    top:2550px;
+    left :1300px;
+}
+#h31{
+    position: absolute;  
+    color: #fff;
+    top:2000px;
+    left :1300px;
+}
 p{
     text-size-adjust: 40%;
 }
@@ -35,9 +47,23 @@ p{
     top:1150px;
     left :1300px;
 }
+#fb1{
+    position: absolute;
+    color: #fff;
+    top:2600px;
+    left :1300px;
+}
+#fb2{
+    position: absolute;
+    color: #fff;
+    top:2050px;
+    left :1300px;
+}
 
 .map{
      background-color: #213502;
+     
+     
 }
 
 
@@ -89,6 +115,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    
+    
 }
 img{
     width:90%;
@@ -227,74 +255,57 @@ img{
 #last{
     height:50px;
 }
-/* For small devices (e.g., phones) */
-@media only screen and (max-width: 600px) {
+/* Default styles */
+
+/* ... (Your existing styles) ... */
+
+/* Media queries for responsiveness */
+
+/* Small devices (phones, 576px and below) */
+@media (max-width: 576px) {
     header {
-        padding: 5px 0;
-    }
-    
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .prev, .next {
-        font-size: 20px;
-        padding: 5px 10px;
+        height: 120px; /* Example: Adjust header height for small devices */
     }
 
-    img {
-        width: 100%;
-        padding-left: 0;
-        height: auto;
+    /* Example adjustments for smaller screens */
+    h3, #h3, #h31, #fb, #fb1, #fb2 {
+        left: 20px; /* Adjust positioning for smaller screens */
     }
 
-    #home {
-        max-width: 100%;
-    }
-
-    #pic {
-        position: relative;
-        top: auto;
-        left: auto;
-    }
-
-    #iframe {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    #img3 {
-        width: 80%;
-        left: 0;
-        margin: auto;
-    }
+    /* Adjustments for other elements as needed */
 }
 
-/* For medium-sized devices (e.g., tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    nav li {
-        margin: 0 25px;
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    /* Example adjustments for medium-sized screens */
+    #img1, #img2, #img3 {
+        width: 50%; /* Adjust image width for medium screens */
+        left: 100px; /* Adjust image positioning for medium screens */
     }
 
-    #img3 {
-        width: 50%;
-        left: 50px;
-    }
+    /* Adjustments for other elements as needed */
 }
 
-/* For large devices (e.g., desktops) */
-@media only screen and (min-width: 1025px) {
-    nav li {
-        margin: 0 55px;
+/* Large devices (desktops, 992px and below) */
+@media (max-width: 992px) {
+    /* Example adjustments for large-sized screens */
+    .container {
+        grid-template-columns: 1fr 1fr; /* Adjust grid columns for large screens */
     }
 
-    #img3 {
-        width: 30%;
-        left: 500px;
-    }
+    /* Adjustments for other elements as needed */
 }
+
+/* Extra large devices (large desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    /* Example adjustments for extra-large screens */
+    .text {
+        font-size: 24px; /* Example: Increase text size for extra-large screens */
+    }
+
+    /* Adjustments for other elements as needed */
+}
+
 
 
 
