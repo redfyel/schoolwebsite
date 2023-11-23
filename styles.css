@@ -4,7 +4,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100px;
-    background-color:rgb(209, 234, 209)
+    background-color:rgb(209, 234, 209);
+    width: 100%;
+    
     
 }
 
@@ -257,55 +259,78 @@ img{
 }
 /* Default styles */
 
-/* ... (Your existing styles) ... */
+/* Media query for smaller screens */
+@media screen and (max-width: 375px) {
+    body {
+        /* Adjustments for smaller screens */
+        font-size: 12px;
+        height: auto;
+        width: auto;
+    }
 
-/* Media queries for responsiveness */
-
-/* Small devices (phones, 576px and below) */
-@media (max-width: 576px) {
     header {
-        height: 120px; /* Example: Adjust header height for small devices */
+        /* Adjustments for smaller screens */
+        padding: 5px 0;
+        text-align: center;
+        left: 0;
     }
 
-    /* Example adjustments for smaller screens */
+    h1 {
+        /* Adjustments for smaller screens */
+        margin-left: 5px;
+    }
+
     h3, #h3, #h31, #fb, #fb1, #fb2 {
-        left: 20px; /* Adjust positioning for smaller screens */
+        /* Adjustments for smaller screens */
+        position: static;
+        top: auto;
+        left: auto;
+        color: #000; /* Adjust color for visibility */
     }
 
-    /* Adjustments for other elements as needed */
-}
-
-/* Medium devices (tablets, 768px and below) */
-@media (max-width: 768px) {
-    /* Example adjustments for medium-sized screens */
-    #img1, #img2, #img3 {
-        width: 50%; /* Adjust image width for medium screens */
-        left: 100px; /* Adjust image positioning for medium screens */
+    p {
+        /* Adjustments for smaller screens */
+        font-size: 70%; /* Example adjustment */
     }
 
-    /* Adjustments for other elements as needed */
+    /* Continue adjusting other elements for smaller screens */
+    /* ... */
 }
 
-/* Large devices (desktops, 992px and below) */
-@media (max-width: 992px) {
-    /* Example adjustments for large-sized screens */
-    .container {
-        grid-template-columns: 1fr 1fr; /* Adjust grid columns for large screens */
+/* Media query for screens between 376px and 768px */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    body {
+        /* Adjustments for medium-sized screens */
+        font-size: 14px;
     }
 
-    /* Adjustments for other elements as needed */
-}
-
-/* Extra large devices (large desktops, 1200px and above) */
-@media (min-width: 1200px) {
-    /* Example adjustments for extra-large screens */
-    .text {
-        font-size: 24px; /* Example: Increase text size for extra-large screens */
+    header {
+        /* Adjustments for medium-sized screens */
+        padding: 10px 0;
+        text-align: center;
+        left: 0;
     }
 
-    /* Adjustments for other elements as needed */
+    h1 {
+        /* Adjustments for medium-sized screens */
+        margin-left: 10px;
+    }
+
+    h3, #h3, #h31, #fb, #fb1, #fb2 {
+        /* Adjustments for medium-sized screens */
+        position: static;
+        top: auto;
+        left: auto;
+        color: #000; /* Adjust color for visibility */
+    }
+
+    p {
+        /* Adjustments for medium-sized screens */
+        font-size: 80%; /* Example adjustment */
+    }
+
+    /* Continue adjusting other elements for medium-sized screens */
+    /* ... */
 }
-
-
 
 
