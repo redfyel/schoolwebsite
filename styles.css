@@ -1,10 +1,13 @@
+
 body {
     font-family: Trebuchet MS, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     height: 100px;
-    background-color:rgb(209, 234, 209)
+    background-color:rgb(209, 234, 209);
+    width: 100%;
+    
     
 }
 
@@ -26,15 +29,44 @@ h3{
     top:1100px;
     left :1300px;
 }
+#h3{
+    position: absolute;
+    color: #fff;
+    top:2550px;
+    left :1300px;
+}
+#h31{
+    position: absolute;  
+    color: #fff;
+    top:2000px;
+    left :1300px;
+}
+p{
+    text-size-adjust: 40%;
+}
 #fb{
     position: absolute;
     color: #fff;
     top:1150px;
     left :1300px;
 }
+#fb1{
+    position: absolute;
+    color: #fff;
+    top:2600px;
+    left :1300px;
+}
+#fb2{
+    position: absolute;
+    color: #fff;
+    top:2050px;
+    left :1300px;
+}
 
 .map{
      background-color: #213502;
+     
+     
 }
 
 
@@ -56,18 +88,16 @@ nav li {
     background-color: #213502;
     height: 50px; /* Adjust the height of the navigation bar as needed */
 }
-  .row {
-    display: flex;
-}
-
-.column {
-    flex: 50%;
-    padding: 10px;
-}
-
-img {
-    width: 100%;
+.logo {
+    width: 80px; /* Adjust the width as per your requirement */
     height: auto;
+}
+h1 {
+    margin-left: 30px; /* Adjust the margin as per your requirement */
+}
+header {
+    display: flex;
+    align-items: center;
 }
 
 /* Style the links within the navigation bar */
@@ -88,11 +118,13 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    
+    
 }
 img{
     width:90%;
     padding-left: 50px;
-    height: 90%;;
+    height: 50%;;
    
 }
 #home{
@@ -150,12 +182,24 @@ img{
 .prev1{
     left:30px;
 }
+.caption{
+    width:30%;
+    position: relative;
+    left:500px;
+}
+.cen{
+    text-align: center;
+    text-size-adjust: 45px;
+}
 #img2{
-    width:fit-content
+    width:30%;
+    position: relative;
+    left:350px;
 }
 #img4{
     width:50%;
 }
+
 #pic{
     flex-direction: row;
     position: absolute;
@@ -171,85 +215,166 @@ img{
 #img3{
     width:30%;
     position: relative;
-    left:500px;
+    left:400px;
     
 }
 #pic2{
     flex-direction: row;
     position: absolute;
     top: 900px;
-    left:1200px;
-
-   
+    left:1200px; 
 }
-/* For small devices (e.g., phones) */
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 5px 0;
-    }
+#img1{
+    width:30%;
+    position: relative;
+    left:350px;
     
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .prev, .next {
-        font-size: 20px;
-        padding: 5px 10px;
-    }
+}
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+     max-height: unset;
+     overflow: visible;
+   }
+   
+   img7 {
+     max-width: 100%;
+     max-height:100%;
+   }
+   
+   .text {
+     font-size: 20px;
+     text-align: left;
+   }
+   .text1 {
+    font-size: 120%;
+    text-align: center;
+  }
+  .left-align {
+    text-align: left;
+}
+#last{
+    height:50px;
+}
+/* Default styles */
 
-    img {
-        width: 100%;
-        padding-left: 0;
+/* Media query for smaller screens */
+@media screen and (max-width: 375px) {
+    body {
+        /* Adjustments for smaller screens */
+        font-size: 12px;
         height: auto;
+        width: auto;
     }
 
-    #home {
-        max-width: 100%;
+    header {
+        /* Adjustments for smaller screens */
+        padding: 5px 0;
+        text-align: center;
+        left: 0;
     }
 
-    #pic {
-        position: relative;
+    h1 {
+        /* Adjustments for smaller screens */
+        margin-left: 5px;
+    }
+
+    h3, #h3, #h31, #fb, #fb1, #fb2 {
+        /* Adjustments for smaller screens */
+        position: static;
         top: auto;
         left: auto;
+        color: #000; /* Adjust color for visibility */
+    }
+    .contact-button{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+    #fb{
+        display: none;
+    }
+    #h3{
+        display: none;
+    }
+    #fb1{
+        display: none;
+    }
+    #h31{
+        display: none;
+    }
+    #fb2{
+        display: none;
     }
 
-    #iframe {
-        width: 100%;
-        height: auto;
-        padding: 20px;
+
+
+    p {
+        /* Adjustments for smaller screens */
+        font-size: 70%; /* Example adjustment */
     }
 
-    #img3 {
-        width: 80%;
+    /* Continue adjusting other elements for smaller screens */
+    /* ... */
+}
+
+/* Media query for screens between 376px and 768px */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    body {
+        /* Adjustments for medium-sized screens */
+        font-size: 14px;
+    }
+
+    header {
+        /* Adjustments for medium-sized screens */
+        padding: 10px 0;
+        text-align: center;
         left: 0;
-        margin: auto;
     }
+
+    h1 {
+        /* Adjustments for medium-sized screens */
+        margin-left: 10px;
+    }
+
+    h3, #h3, #h31, #fb, #fb1, #fb2 {
+        /* Adjustments for medium-sized screens */
+        position: static;
+        top: auto;
+        left: auto;
+        color: #000; /* Adjust color for visibility */
+    }
+    .contact-button{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+    #fb{
+        display: none;
+    }
+    #h3{
+        display: none;
+    }
+    #fb1{
+        display: none;
+    }
+    #h31{
+        display: none;
+    }
+    #fb2{
+        display: none;
+    }
+
+    p {
+        /* Adjustments for medium-sized screens */
+        font-size: 80%; /* Example adjustment */
+    }
+
+    /* Continue adjusting other elements for medium-sized screens */
+    /* ... */
 }
-
-/* For medium-sized devices (e.g., tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    nav li {
-        margin: 0 25px;
-    }
-
-    #img3 {
-        width: 50%;
-        left: 50px;
-    }
-}
-
-/* For large devices (e.g., desktops) */
-@media only screen and (min-width: 1025px) {
-    nav li {
-        margin: 0 55px;
-    }
-
-    #img3 {
-        width: 30%;
-        left: 500px;
-    }
-}
-
-
 
